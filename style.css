@@ -1,0 +1,88 @@
+
+body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.cards {
+    width: 250px;
+    max-width: 100%;
+    border: 3px solid;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+img {
+    display: block;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20%;
+}
+
+h1, p {
+    padding: 0 20px;
+}
+
+ul, ol {
+    padding-left: 40px;
+}
+
+
+#fire {
+    background-color: rgb(231, 151, 97);
+    border-color: red;
+}
+
+#water {
+    background-color: rgb(97, 200, 231);
+    border-color: blue;
+}
+
+#dirt {
+    background-color: rgb(97, 231, 180);
+    border-color: green;
+}
+
+#ult {
+    background: linear-gradient(70deg, orange, red);
+    border-color: rgb(255, 166, 0);
+}
+
+
+#catContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#catFacts {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#catFacts:hover {
+    background-color: darkorange;
+}
+
+#catFactResult {
+    font-size: 18px;
+    margin: 15px auto;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #fff3df;
+    border-radius: 10px;
+}
