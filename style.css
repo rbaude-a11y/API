@@ -86,3 +86,60 @@ ul, ol {
     background-color: #fff3df;
     border-radius: 10px;
 }
+
+#pokemonContainer {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#pokemonInput {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#pokemonButton {
+    padding: 12px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pokemonButton:hover {
+    background-color: #b91c1c;
+}
+
+.pokemonCard {
+    width: 280px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff3df;
+    border: 2px solid orange;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pokemonCard h2 {
+    text-transform: capitalize;
+}
+
+.pokemonCard img {
+    width: 150px;
+    padding: 0;
+    margin: auto;
+}
+
+.pokemonCard p {
+    padding: 0;
+    text-align: left;
+}
+
+.pokemonCard:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+}
