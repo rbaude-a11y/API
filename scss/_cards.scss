@@ -1,0 +1,26 @@
+@use "sass:list";
+@use "variables" as v;
+@use "mixins" as m;
+
+.cards {
+  width: 250px;
+  max-width: 100%;
+  border: 3px solid;
+  border-radius: 5%;
+  overflow: hidden;
+
+  @include m.hover-scale(1.05);
+}
+
+// Génère les sélecteurs #fire, #water et #dirt à partir de la map.
+@each $id, $colors in v.$card-themes {
+  ##{$id} {
+    background-color: list.nth($colors, 1);
+    border-color: list.nth($colors, 2);
+  }
+}
+
+#ult {
+  background: v.$ultimate-background;
+  border-color: v.$ultimate-border;
+}

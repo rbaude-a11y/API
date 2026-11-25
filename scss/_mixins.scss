@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+// Style commun aux deux boutons, avec des couleurs paramétrables.
+@mixin button($background, $hover-background) {
+  background-color: $background;
+  color: v.$white;
+  padding: 12px v.$spacing;
+  border: none;
+  border-radius: v.$radius-button;
+  cursor: pointer;
+  font-size: v.$font-size;
+
+  &:hover {
+    background-color: $hover-background;
+  }
+}
+
+// Effet de survol des cartes.
+@mixin hover-scale($scale) {
+  &:hover {
+    transform: scale($scale);
+    transition: v.$transition;
+  }
+}
+
+@mixin centered-section {
+  width: 100%;
+  text-align: center;
+}

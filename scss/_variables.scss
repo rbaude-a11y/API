@@ -1,0 +1,22 @@
+// Identité visuelle et dimensions communes.
+$font-family: Arial, sans-serif;
+$spacing: 20px;
+$font-size: 16px;
+$radius-button: 8px;
+$transition: 0.2s;
+$white: white;
+$orange: orange;
+$orange-hover: darkorange;
+$cream: #fff3df;
+$pokemon-red: #e63946;
+$pokemon-red-hover: #b91c1c;
+$input-border: #ddd;
+
+// Couleurs des cartes statiques : fond et bordure.
+$card-themes: (
+  fire: (rgb(231, 151, 97), red),
+  water: (rgb(97, 200, 231), blue),
+  dirt: (rgb(97, 231, 180), green)
+);
+$ultimate-background: linear-gradient(70deg, orange, red);
+$ultimate-border: rgb(255, 166, 0);

@@ -1,0 +1,25 @@
+@use "variables" as v;
+
+body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: v.$spacing;
+  font-family: v.$font-family;
+  margin: v.$spacing;
+}
+
+img {
+  display: block;
+  padding: v.$spacing;
+  width: 200px;
+  border-radius: 20%;
+}
+
+h1, p {
+  padding: 0 v.$spacing;
+}
+
+ul, ol {
+  padding-left: 40px;
+}

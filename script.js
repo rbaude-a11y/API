@@ -1,3 +1,5 @@
+import "./scss/main.scss";
+
 const button = document.getElementById("catFacts");
 const result = document.getElementById("catFactResult");
 
